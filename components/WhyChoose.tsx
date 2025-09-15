@@ -41,9 +41,10 @@ const WhyChoose = (props: Props) => {
               </div>
               <h5 className="title">Eco Friendly</h5>
               <p className="disc">
-                Litarrices sociosqu in commodo quam proin facilisis
+                We provide sustainable solutions that protect the environment
+                while ensuring quality results.
               </p>
-              <a href="service-details.html" className="read-more-btn">
+              <a href="/service" className="read-more-btn">
                 Read More <i className="fa-regular fa-arrow-right"></i>
               </a>
             </div>
@@ -88,11 +89,11 @@ const WhyChoose = (props: Props) => {
                   />
                 </svg>
               </div>
-              <h5 className="title">Easy Install</h5>
+              <h5 className="title">Innovation</h5>
               <p className="disc">
-                Litarrices sociosqu in commodo quam proin facilisis
+                We deliver creative and modern solutions to meet evolving needs.
               </p>
-              <a href="service-details.html" className="read-more-btn">
+              <a href="/service" className="read-more-btn">
                 Read More <i className="fa-regular fa-arrow-right"></i>
               </a>
             </div>
@@ -113,11 +114,12 @@ const WhyChoose = (props: Props) => {
                   />
                 </svg>
               </div>
-              <h5 className="title">Low conservation</h5>
+              <h5 className="title">Quality</h5>
               <p className="disc">
-                Litarrices sociosqu in commodo quam proin facilisis
+                We ensure top-notch services with attention to detail and
+                lasting results.
               </p>
-              <a href="service-details.html" className="read-more-btn">
+              <a href="/service" className="read-more-btn">
                 Read More <i className="fa-regular fa-arrow-right"></i>
               </a>
             </div>
@@ -168,9 +170,9 @@ const WhyChoose = (props: Props) => {
               </div>
               <h5 className="title">Eco Friendly</h5>
               <p className="disc">
-                Litarrices sociosqu in commodo quam proin facilisis
+                Sustainable solutions that care for both people and the planet.
               </p>
-              <a href="service-details.html" className="read-more-btn">
+              <a href="/service" className="read-more-btn">
                 Read More <i className="fa-regular fa-arrow-right"></i>
               </a>
             </div>

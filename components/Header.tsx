@@ -34,270 +34,29 @@ const Header = (props: Props) => {
           <div className="header-nav main-nav-one">
             <nav>
               <ul>
-                <li className="has-dropdown">
-                  <a className="nav-link" href="#">
+                <li>
+                  <a className="nav-link" href="/">
                     HOME
                   </a>
-                  <ul className="submenu">
-                    <li className="sub-dropdown">
-                      <a href="javascript:void(0);">Multipages</a>
-                      <ul className="submenu third-lvl base">
-                        <li>
-                          <a className="mobile-menu-link" href="index.html">
-                            Wind Energy
-                          </a>
-                        </li>
-                        <li>
-                          <a className="mobile-menu-link" href="index-two.html">
-                            Solar Energy
-                          </a>
-                        </li>
-                        <li>
-                          <a
-                            className="mobile-menu-link"
-                            href="index-three.html"
-                          >
-                            Renewable Energy
-                          </a>
-                        </li>
-                        <li>
-                          <a
-                            className="mobile-menu-link"
-                            href="index-four.html"
-                          >
-                            Hydro Power
-                          </a>
-                        </li>
-                        <li>
-                          <a
-                            className="mobile-menu-link"
-                            href="index-five.html"
-                          >
-                            Solar Shop
-                          </a>
-                        </li>
-                        <li>
-                          <a className="mobile-menu-link" href="index-six.html">
-                            Solar Solution
-                          </a>
-                        </li>
-                        <li>
-                          <a
-                            className="mobile-menu-link"
-                            href="index-seven.html"
-                          >
-                            Energy Storage
-                          </a>
-                        </li>
-                        <li>
-                          <a
-                            className="mobile-menu-link"
-                            href="index-eight.html"
-                          >
-                            Solar Installation
-                          </a>
-                        </li>
-                        <li>
-                          <a
-                            className="mobile-menu-link"
-                            href="index-nine.html"
-                          >
-                            Green Energy
-                          </a>
-                        </li>
-                      </ul>
-                    </li>
-                    <li className="sub-dropdown">
-                      <a href="javascript:void(0);">One Pages</a>
-                      <ul className="submenu third-lvl base">
-                        <li>
-                          <a
-                            className="mobile-menu-link"
-                            href="one-page-one.html"
-                          >
-                            One Page One
-                          </a>
-                        </li>
-                        <li>
-                          <a
-                            className="mobile-menu-link"
-                            href="one-page-two.html"
-                          >
-                            One Page two
-                          </a>
-                        </li>
-                        <li>
-                          <a
-                            className="mobile-menu-link"
-                            href="one-page-three.html"
-                          >
-                            One Page three
-                          </a>
-                        </li>
-                        <li>
-                          <a
-                            className="mobile-menu-link"
-                            href="one-page-four.html"
-                          >
-                            One Page four
-                          </a>
-                        </li>
-                        <li>
-                          <a
-                            className="mobile-menu-link"
-                            href="one-page-five.html"
-                          >
-                            One Page five
-                          </a>
-                        </li>
-                      </ul>
-                    </li>
-                  </ul>
-                </li>
-                <li className="has-dropdown">
-                  <a className="nav-link" href="#">
-                    PAGES
-                  </a>
-                  <ul className="submenu">
-                    <li>
-                      <a href="aboutus.html">About Us</a>
-                    </li>
-                    <li>
-                      <a href="appoinment.html">Appoinment</a>
-                    </li>
-                    <li>
-                      <a href="gallery.html">Gallery</a>
-                    </li>
-                    <li>
-                      <a href="team.html">Team</a>
-                    </li>
-                    <li>
-                      <a href="team-details.html">Team Details</a>
-                    </li>
-                    <li>
-                      <a href="contact.html">Contact</a>
-                    </li>
-                    <li>
-                      <a href="faq.html">Faq</a>
-                    </li>
-                    <li className="sub-dropdown">
-                      <a href="javascript:void(0);">Shop</a>
-                      <ul className="submenu third-lvl base">
-                        <li>
-                          <a className="mobile-menu-link" href="shop.html">
-                            Shop
-                          </a>
-                        </li>
-                        <li>
-                          <a
-                            className="mobile-menu-link"
-                            href="shop-single.html"
-                          >
-                            Shop Single
-                          </a>
-                        </li>
-                        <li>
-                          <a className="mobile-menu-link" href="checkout.html">
-                            Checkout
-                          </a>
-                        </li>
-                        <li>
-                          <a className="mobile-menu-link" href="cart.html">
-                            Cart
-                          </a>
-                        </li>
-                      </ul>
-                    </li>
-                  </ul>
                 </li>
 
-                <li className="has-dropdown">
-                  <a className="nav-link" href="#">
+                <li>
+                  <a className="nav-link" href="/service">
                     SERVICES
                   </a>
-                  <ul className="submenu">
-                    <li>
-                      <a href="service.html">Service</a>
-                    </li>
-                    <li>
-                      <a href="service-details.html">Service Details</a>
-                    </li>
-                  </ul>
-                </li>
-                <li className="has-dropdown">
-                  <a className="nav-link" href="#">
-                    BLOG
-                  </a>
-                  <ul className="submenu">
-                    <li>
-                      <a href="blog.html">Blog</a>
-                    </li>
-                    <li>
-                      <a href="blog-details.html">Blog Details</a>
-                    </li>
-                  </ul>
-                </li>
-                <li className="has-dropdown">
-                  <a className="nav-link" href="#">
-                    PROJECT
-                  </a>
-                  <ul className="submenu">
-                    <li>
-                      <a href="project.html">Our Project</a>
-                    </li>
-                    <li>
-                      <a href="project-col-2.html">Project col 2</a>
-                    </li>
-                    <li>
-                      <a href="project-swiper-sm.html">Project Style 2</a>
-                    </li>
-                    <li>
-                      <a href="project-overflow.html">Project Style 3</a>
-                    </li>
-                    <li>
-                      <a href="project-swiper-full.html">Project Slider</a>
-                    </li>
-                    <li className="sub-dropdown">
-                      <a href="javascript:void(0);">Project Details</a>
-                      <ul className="submenu third-lvl base">
-                        <li>
-                          <a
-                            className="mobile-menu-link"
-                            href="project-details.html"
-                          >
-                            Project Details
-                          </a>
-                        </li>
-                        <li>
-                          <a
-                            className="mobile-menu-link"
-                            href="project-details-gallery.html"
-                          >
-                            Details Gallery
-                          </a>
-                        </li>
-                        <li>
-                          <a
-                            className="mobile-menu-link"
-                            href="project-details-vedio.html"
-                          >
-                            Details Vedio
-                          </a>
-                        </li>
-                        <li>
-                          <a
-                            className="mobile-menu-link"
-                            href="project-details-carousel.html"
-                          >
-                            Details Carousel
-                          </a>
-                        </li>
-                      </ul>
-                    </li>
-                  </ul>
                 </li>
                 <li>
-                  <a className="nav-link" href="contact.html">
+                  <a className="nav-link" href="/blogs">
+                    BLOG
+                  </a>
+                </li>
+                <li>
+                  <a className="nav-link" href="/project">
+                    PROJECT
+                  </a>
+                </li>
+                <li>
+                  <a className="nav-link" href="/contact">
                     CONTACT
                   </a>
                 </li>
@@ -308,7 +67,7 @@ const Header = (props: Props) => {
         </div>
         <div className="header-right">
           <div className="action-button-menu">
-            <a href="contact.html" className="contact">
+            <a href="/contact" className="contact">
               Let’s Talk
             </a>
             <div id="menu-btn" className="block md:hidden">

@@ -66,11 +66,10 @@ const About = (props: Props) => {
                 </div>
                 <div className="inner-content">
                   <p className="disc">
-                    At Green Power Systems PLC, we are dedicated to
-                    revolutionizing how energy is used. As a trusted provider of
-                    solar, electric vehicles, fast chargers, and home water
-                    purification solutions, we drive the shift toward a cleaner,
-                    greener, and more sustainable future.
+                    Green Power Systems PLC aims to become Africa’s most valued
+                    company by 2032, serving society through the creation of
+                    200,000 business partners and 25 million employment
+                    opportunities.
                   </p>
 
                   <div className="importanc-wrapper">
@@ -118,8 +117,8 @@ const About = (props: Props) => {
                         </svg>
                       </div>
                       <div className="info">
-                        <h6 className="title">14000+</h6>
-                        <p>Installed Capacity</p>
+                        <h6 className="title">80+</h6>
+                        <p>Total Employees</p>
                       </div>
                     </div>
                     <div className="single">
@@ -195,12 +194,12 @@ const About = (props: Props) => {
                         <img src="assets/images/about/25.png" alt="" />
                       </div>
                       <div className="name-area">
-                        <h6 className="title">William Henry</h6>
-                        <span>CEO OF Solari</span>
+                        <h6 className="title">Eng. Kidem Tesfaye</h6>
+                        <span>CEO OF GREEN POWER SYSTEMS PLC</span>
                       </div>
                     </div>
                     {/* <!-- author-area end --> */}
-                    <a href="aboutus.html" className="rts-btn btn-primary">
+                    <a href="/service" className="rts-btn btn-primary">
                       Learn More
                     </a>
                   </div>
