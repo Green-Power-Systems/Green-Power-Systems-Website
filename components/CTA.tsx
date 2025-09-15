@@ -111,6 +111,7 @@ const CTA = (props: Props) => {
           </div>
         </div>
       </div>
+      <Toaster position="bottom-right" richColors />
     </div>
   );
 }
