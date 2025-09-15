@@ -14,7 +14,11 @@ const Hero = (props: Props) => {
                   Welcome To Green Power Systems PLC
                 </span>
                 <h1 className="title skew-up">
+<<<<<<< HEAD
                   Empoweringg Your World <br />
+=======
+                  Empowering Your World <br />
+>>>>>>> c3bc35e6cfa5d0580445caafe05c8cd21f65bbef
                   with Renewable Energy
                 </h1>
                 <p className="disc skew-up">
