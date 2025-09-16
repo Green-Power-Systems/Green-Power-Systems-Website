@@ -266,7 +266,7 @@ const Footer = (props: Props) => {
               {/* <!-- copyright area start --> */}
               <div className="copyright-area-two">
                 <div className="left">
-                  <p>Copyright 2023. All Rights Reserved.</p>
+                  <p>Copyright © {new Date().getFullYear()} Green Power Systems. All Rights Reserved.</p>
                 </div>
                 {/* <!-- <div className="right">
                         <ul>
