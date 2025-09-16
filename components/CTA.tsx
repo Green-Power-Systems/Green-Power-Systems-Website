@@ -95,7 +95,7 @@ const CTA = (props: Props) => {
                         value={form.message}
                         onChange={handleChange}
                         className="mt-3"
-                        type="phone"
+                        type="text"
                         placeholder="Your Message"
                         required
                       />
