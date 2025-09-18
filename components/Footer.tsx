@@ -59,6 +59,12 @@ const Footer = (props: Props) => {
                     <div className="pages-footer">
                       <ul>
                         <li>
+                          <a href="/">
+                            <i className="fa-regular fa-chevron-right"></i>
+                            <p>Home</p>
+                          </a>
+                        </li>
+                        <li>
                           <a href="/about">
                             <i className="fa-regular fa-chevron-right"></i>
                             <p>About Us</p>

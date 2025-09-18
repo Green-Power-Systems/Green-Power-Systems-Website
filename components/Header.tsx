@@ -39,6 +39,11 @@ const Header = (props: Props) => {
                     HOME
                   </a>
                 </li>
+                <li>
+                  <a className="nav-link" href="/about">
+                    ABOUT
+                  </a>
+                </li>
 
                 <li>
                   <a className="nav-link" href="/service">
@@ -46,13 +51,8 @@ const Header = (props: Props) => {
                   </a>
                 </li>
                 <li>
-                  <a className="nav-link" href="/blogs">
+                  <a className="nav-link" href="/blog">
                     BLOG
-                  </a>
-                </li>
-                <li>
-                  <a className="nav-link" href="/project">
-                    PROJECT
                   </a>
                 </li>
                 <li>
@@ -126,7 +126,7 @@ const Header = (props: Props) => {
             <ul className="flex flex-col text-base font-medium text-gray-900">
               <li>
                 <a
-                  href="index.html"
+                  href="/"
                   onClick={() => setMobileMenuOpen(false)}
                   className="block py-3 border-b border-gray-200"
                 >
@@ -135,16 +135,16 @@ const Header = (props: Props) => {
               </li>
               <li>
                 <a
-                  href="aboutus.html"
+                  href="/about"
                   onClick={() => setMobileMenuOpen(false)}
                   className="block py-3 border-b border-gray-200"
                 >
-                  Pages
+                  About
                 </a>
               </li>
               <li>
                 <a
-                  href="service.html"
+                  href="/service"
                   onClick={() => setMobileMenuOpen(false)}
                   className="block py-3 border-b border-gray-200"
                 >
@@ -153,16 +153,7 @@ const Header = (props: Props) => {
               </li>
               <li>
                 <a
-                  href="portfolio.html"
-                  onClick={() => setMobileMenuOpen(false)}
-                  className="block py-3 border-b border-gray-200"
-                >
-                  Portfolio
-                </a>
-              </li>
-              <li>
-                <a
-                  href="blog.html"
+                  href="/blog"
                   onClick={() => setMobileMenuOpen(false)}
                   className="block py-3 border-b border-gray-200"
                 >
@@ -171,7 +162,7 @@ const Header = (props: Props) => {
               </li>
               <li>
                 <a
-                  href="contact.html"
+                  href="/contact"
                   onClick={() => setMobileMenuOpen(false)}
                   className="block py-3 border-b border-gray-200"
                 >
