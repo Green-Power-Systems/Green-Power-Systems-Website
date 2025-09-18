@@ -192,14 +192,6 @@ const Footer = (props: Props) => {
                               greenpowersystemsplc@gmail.com
                             </h6>
                           </a>
-                          <a href="mailto:kidemtesfaye@gmail.com">
-                            <h6 className="title">kidemtesfaye@gmail.com</h6>
-                          </a>
-                          <a href="mailto:kidem.tesfaye@packerrdj.com">
-                            <h6 className="title">
-                              kidem.tesfaye@packerrdj.com
-                            </h6>
-                          </a>
                           <span>Email us for query</span>
                         </div>
                       </div>
@@ -272,7 +264,20 @@ const Footer = (props: Props) => {
               {/* <!-- copyright area start --> */}
               <div className="copyright-area-two">
                 <div className="left">
-                  <p>Copyright © {new Date().getFullYear()} Green Power Systems. All Rights Reserved.</p>
+                  <p>
+                    Copyright © {new Date().getFullYear()} Green Power Systems.
+                    All Rights Reserved.
+                  </p>
+                  <p>
+                                        Developed by{" "}
+                    <a
+                      href="https://www.habeshatechnologies.com"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      Habesha Technologies PLC
+                    </a>                 {" "}
+                  </p>
                 </div>
                 {/* <!-- <div className="right">
                         <ul>

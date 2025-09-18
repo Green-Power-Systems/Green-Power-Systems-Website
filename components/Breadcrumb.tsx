@@ -8,7 +8,7 @@ type Props = {
 const Breadcrumb = ({name, url}: Props) => {
   return (
     <div>
-        <div className="rts-bread-crumb-area bg_image bg-breadcrumb">
+        <div className="rts-bread-crumb-area bg-breadcrumb">
         <div className="container ptb--65">
             <div className="row">
                 <div className="col-lg-12">
@@ -20,7 +20,7 @@ const Breadcrumb = ({name, url}: Props) => {
                             </div>
                             <div className="slug skew-up">
                                 <a href="/">HOME /</a>
-                                <a className="active" href="#index.html">{name}</a>
+                                <a className="active" href="/">{name}</a>
                             </div>
                         </div>
                     </div>
