@@ -255,7 +255,7 @@ const Service = (props: Props) => {
                       <div className="col-lg-6">
                         <div className="thumbnail-area-left-image">
                           <img
-                            src="assets/images/service/21.jpg"
+                            src="assets/images/green/other-2.jpg"
                             alt="service"
                           />
                         </div>

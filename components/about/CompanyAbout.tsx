@@ -12,7 +12,10 @@ const CompanyAbout = (props: Props) => {
               {/* <!-- about inner solar energy --> */}
               <div className="rts-about-left-image-area">
                 <div className="thumbnail">
-                  <img src="assets/images/about/20.png" alt="solar energy" />
+                  <img
+                    src="assets/images/green/other-4.jpg"
+                    alt="solar energy"
+                  />
                 </div>
               </div>
               {/* <!-- about inner solar energy end --> */}
@@ -99,7 +102,10 @@ const CompanyAbout = (props: Props) => {
                       <div className="row align-items-center">
                         <div className="col-lg-6">
                           <div className="left-area-wrapper">
-                            <img src="assets/images/about/21.jpg" alt="about" />
+                            <img
+                              src="assets/images/green/bread-cuamb-banner-2.jpg"
+                              alt="about"
+                            />
                           </div>
                         </div>
                         <div className="col-lg-6">
@@ -178,7 +184,7 @@ const CompanyAbout = (props: Props) => {
                       <div className="row align-items-center">
                         <div className="col-lg-6">
                           <div className="left-area-wrapper">
-                            <img src="assets/images/about/21.jpg" alt="about" />
+                            <img src="assets/images/green/other-1.jpg" alt="about" />
                           </div>
                         </div>
                         <div className="col-lg-6">
@@ -260,7 +266,10 @@ const CompanyAbout = (props: Props) => {
                       <div className="row align-items-center">
                         <div className="col-lg-6">
                           <div className="left-area-wrapper">
-                            <img src="assets/images/about/21.jpg" alt="about" />
+                            <img
+                              src="assets/images/green/bread-cuamb-banner-1.jpg"
+                              alt="about"
+                            />
                           </div>
                         </div>
                         <div className="col-lg-6">

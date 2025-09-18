@@ -2,6 +2,7 @@ import About from '@/components/About'
 import Blog from '@/components/Blog';
 import CTA from '@/components/CTA';
 import Facts from '@/components/Facts';
+import Feedback from '@/components/Feedback';
 import GapTop from '@/components/GapTop';
 import Hero from '@/components/Hero'
 import Projects from '@/components/Projects';
@@ -20,9 +21,10 @@ const page = () => {
       <CTA/>
       <Facts/>
       <Service/>
+      <Feedback/>
       {/* <Projects/> */}
       <GapTop/>
-      <Team/>
+      {/* <Team/> */}
       <Blog/>
     </div>
   );

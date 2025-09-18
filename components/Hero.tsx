@@ -24,21 +24,24 @@ const Hero = (props: Props) => {
                 </p>
 
                 <div className="baner-three-button-area">
-                  <a href="appoinment.html" className="rts-btn btn-primary skew-up">
+                  <a
+                    href="appoinment.html"
+                    className="rts-btn btn-primary skew-up"
+                  >
                     Learn More
                   </a>
                   <div className="call-button">
                     <i className="fa-solid fa-phone"></i>
                     <div className="info">
                       <span className="skew-up">Call Us 24/7</span>
-                      <a href="tel:+4733378901">
-                        <h6 className="title skew-up">+236-3256.21456</h6>
+                      <a href="tel:+251911758675">
+                        <h6 className="title skew-up">+251911758675</h6>
                       </a>
                     </div>
                   </div>
                 </div>
                 <div className="vedio-icone">
-                  <a className="video-play-button play-video" href="#">
+                  <a className="video-play-button " href="/">
                     <span></span>
                   </a>
                   <div className="video-overlay">
