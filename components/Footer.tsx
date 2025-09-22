@@ -15,13 +15,13 @@ const Footer = (props: Props) => {
               <div className="single-footer-one-wrapper two">
                 <div className="single-footer-component first">
                   <a href="index.html" className="logo-area-footer">
-                    <img src="assets/images/green/logo-no-bg.png" alt="logo" />
+                    <img src="assets/images/green/logo-with-white-text-nobg.png" alt="logo" />
                   </a>
                   <div className="body mt--45">
                     <p className="disc">
-                      Green Power Systems PLC is committed
+                      Green Power Systems PLC is committed {" "}
                       <br />
-                      to sustainability and responsible
+                      to sustainability and responsible {" "}
                       <br />
                       business practices.
                     </p>

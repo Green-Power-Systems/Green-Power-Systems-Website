@@ -15,7 +15,7 @@ const About = (props: Props) => {
               {/* <!-- about left area start --> */}
               <div className="about-lefta-area-solari-2 pb--150">
                 <div className="thumbnail-image-lg">
-                  <img src="assets/images/about/23.png" alt="about" />
+                  <img src="assets/images/green/other-1.jpg" alt="about" />
                 </div>
                 <div className="thumbnail-image-bottom images-2">
                   <img src="assets/images/about/24.png" alt="about" />
@@ -190,9 +190,14 @@ const About = (props: Props) => {
                   <div className="author-button-area">
                     {/* <!-- author-area start --> */}
                     <div className="author-area">
-                      <div className="thumbnail">
-                        <img src="assets/images/about/25.png" alt="" />
+                      <div className="thumbnail w-32 h-32 overflow-hidden rounded-full">
+                        <img
+                          src="assets/images/green/eng-kidem.png"
+                          alt="Profile"
+                          className="w-full h-full object-cover"
+                        />
                       </div>
+
                       <div className="name-area">
                         <h6 className="title">Eng. Kidem Tesfaye</h6>
                         <span>CEO OF GREEN POWER SYSTEMS PLC</span>

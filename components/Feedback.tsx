@@ -4,7 +4,7 @@ type Props = {}
 
 const Feedback = (props: Props) => {
   return (
-    <div className=' mt-5'>
+    <div className=" mt-5">
       <div className="rts-clients-feedback rts-section-gapBottom bg-feedback-about bg_image">
         <div className="container">
           <div className="row">
@@ -35,15 +35,15 @@ const Feedback = (props: Props) => {
                       <div className="feedback-about-swiper-wrapper">
                         <div className="single-feedback-about">
                           <div className="head">
-                            <a href="#" className="thumbnail">
+                            {/* <a href="#" className="thumbnail">
                               <img
                                 src="assets/images/about/07.png"
                                 alt="about"
                               />
-                            </a>
+                            </a> */}
                             <div className="info">
-                              <h5 className="title">Mulugeta Alemu</h5>
-                              <span>Engineer, Green Power Systems</span>
+                              <h5 className="title">Eng. Kidem Tesfaye</h5>
+                              <span>CEO, Green Power Systems</span>
                             </div>
                           </div>
                           <div className="body">
@@ -62,14 +62,14 @@ const Feedback = (props: Props) => {
                       <div className="feedback-about-swiper-wrapper">
                         <div className="single-feedback-about">
                           <div className="head">
-                            <a href="#" className="thumbnail">
+                            {/* <a href="#" className="thumbnail">
                               <img
                                 src="assets/images/about/07.png"
                                 alt="about"
                               />
-                            </a>
+                            </a> */}
                             <div className="info">
-                              <h5 className="title">Liya Tesfaye</h5>
+                              <h5 className="title">Eng.Sirak</h5>
                               <span>Manager, Green Power Systems</span>
                             </div>
                           </div>
@@ -88,14 +88,14 @@ const Feedback = (props: Props) => {
                       <div className="feedback-about-swiper-wrapper">
                         <div className="single-feedback-about">
                           <div className="head">
-                            <a href="#" className="thumbnail">
+                            {/* <a href="#" className="thumbnail">
                               <img
                                 src="assets/images/about/07.png"
                                 alt="about"
                               />
-                            </a>
+                            </a> */}
                             <div className="info">
-                              <h5 className="title">Getachew Bekele</h5>
+                              <h5 className="title">Eng. Kidem Tesfaye</h5>
                               <span>CEO, Green Power Systems</span>
                             </div>
                           </div>

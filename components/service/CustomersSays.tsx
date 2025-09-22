@@ -22,7 +22,7 @@ const CustomersSays = (props: Props) => {
               {/* */}
               <div className="rts-single-testimonials-one">
                 <div className="logo">
-                  <img src="assets/images/testimonials/logo/01.png" alt="" />
+                  <img src="assets/images/green/logo-no-bg.png" alt="" />
                 </div>
                 <p className="disc">
                   “To be an African most Valued Company that will serve our
@@ -30,9 +30,9 @@ const CustomersSays = (props: Props) => {
                   25 million employees By 2032.”
                 </p>
                 <div className="awener-area">
-                  <a href="#" className="author">
+                  {/* <a href="#" className="author">
                     <img src="assets/images/testimonials/02.png" alt="images" />
-                  </a>
+                  </a> */}
                   <div className="main">
                     <a href="#">
                       <h6 className="title">Green Power Systems</h6>
@@ -47,7 +47,7 @@ const CustomersSays = (props: Props) => {
               {/* */}
               <div className="rts-single-testimonials-one">
                 <div className="logo">
-                  <img src="assets/images/testimonials/logo/01.png" alt="" />
+                  <img src="assets/images/green/logo-no-bg.png" alt="" />
                 </div>
                 <p className="disc">
                   “Sustainable growth through superior customer service, partner
@@ -55,9 +55,9 @@ const CustomersSays = (props: Props) => {
                   quality, and commitment.”
                 </p>
                 <div className="awener-area">
-                  <a href="#" className="author">
+                  {/* <a href="#" className="author">
                     <img src="assets/images/testimonials/03.png" alt="images" />
-                  </a>
+                  </a> */}
                   <div className="main">
                     <a href="#">
                       <h6 className="title">Green Power Systems</h6>
@@ -72,7 +72,7 @@ const CustomersSays = (props: Props) => {
               {/* */}
               <div className="rts-single-testimonials-one">
                 <div className="logo">
-                  <img src="assets/images/testimonials/logo/01.png" alt="" />
+                  <img src="assets/images/green/logo-no-bg.png" alt="" />
                 </div>
                 <p className="disc">
                   “Our core values are innovation, social responsibility &
@@ -80,9 +80,9 @@ const CustomersSays = (props: Props) => {
                   serve our society.”
                 </p>
                 <div className="awener-area">
-                  <a href="#" className="author">
+                  {/* <a href="#" className="author">
                     <img src="assets/images/testimonials/04.png" alt="images" />
-                  </a>
+                  </a> */}
                   <div className="main">
                     <a href="#">
                       <h6 className="title">Green Power Systems</h6>

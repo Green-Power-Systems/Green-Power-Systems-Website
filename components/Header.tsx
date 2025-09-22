@@ -6,64 +6,108 @@ type Props = {};
 
 const Header = (props: Props) => {
   const [isMobileMenuOpen, setMobileMenuOpen] = useState(false);
+  // State to track if the page has been scrolled
+  const [scrolled, setScrolled] = useState(false);
+
   useEffect(() => {
+    // Add overflow-hidden to body when mobile menu is open
     if (isMobileMenuOpen) {
       document.body.classList.add("overflow-hidden");
     } else {
       document.body.classList.remove("overflow-hidden");
     }
-  }, [isMobileMenuOpen]);
+
+    // Function to handle scroll event
+    const handleScroll = () => {
+      const isScrolled = window.scrollY > 50;
+      if (isScrolled !== scrolled) {
+        setScrolled(isScrolled);
+      }
+    };
+
+    // Add event listener for scroll
+    window.addEventListener("scroll", handleScroll);
+
+    // Clean up the event listener when the component unmounts
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, [isMobileMenuOpen, scrolled]);
+
   return (
     <>
       <header className="header-three header--sticky">
         <div className="header-left">
-          <a href="index.html" className="logo-area">
+          <a href="/" className="logo-area">
             <img
               className="logo-white logo-green"
-              src="assets/images/green/logo-no-bg.png"
+              src={
+                scrolled
+                  ? "assets/images/green/logo-no-bg.png"
+                  : "assets/images/green/logo-with-white-text-nobg.png"
+              }
               alt="logo"
             />
             <img
               className="logo-dark logo-green"
-              src="assets/images/green/Screenshot 2025-08-18 011342.png"
+              src={
+                scrolled
+                  ? "assets/images/green/Screenshot 2025-08-18 011342.png"
+                  : "assets/images/green/logo-with-white-text-nobg.png"
+              }
               alt="logo"
             />
           </a>
 
-          {/* <!-- navigation area start --> */}
+          {/* */}
           <div className="header-nav main-nav-one">
             <nav>
               <ul>
                 <li>
-                  <a className="nav-link" href="/">
+                  <a
+                    className={`nav-link ${scrolled ? "text-black" : "text-white"}`}
+                    href="/"
+                  >
                     HOME
                   </a>
                 </li>
                 <li>
-                  <a className="nav-link" href="/about">
+                  <a
+                    className={`nav-link ${scrolled ? "text-black" : "text-white"}`}
+                    href="/about"
+                  >
                     ABOUT
                   </a>
                 </li>
 
                 <li>
-                  <a className="nav-link" href="/service">
+                  <a
+                    className={`nav-link ${scrolled ? "text-black" : "text-white"}`}
+                    href="/service"
+                  >
                     SERVICES
                   </a>
                 </li>
                 <li>
-                  <a className="nav-link" href="/blog">
+                  <a
+                    className={`nav-link ${scrolled ? "text-black" : "text-white"}`}
+                    href="/blog"
+                  >
                     BLOG
                   </a>
                 </li>
                 <li>
-                  <a className="nav-link" href="/contact">
+                  <a
+                    className={`nav-link ${scrolled ? "text-black" : "text-white"}`}
+                    href="/contact"
+                  >
                     CONTACT
                   </a>
                 </li>
               </ul>
             </nav>
           </div>
-          {/* <!-- navigation area end --> */}
+          {/* */}
         </div>
         <div className="header-right">
           <div className="action-button-menu">
