@@ -268,23 +268,19 @@ const Footer = (props: Props) => {
                     Copyright © {new Date().getFullYear()} Green Power Systems.
                     All Rights Reserved.
                   </p>
+                </div>
+                <div className="right">
                   <p>
-                                        Developed by{" "}
+                       Developed by{" "}
                     <a
                       href="https://www.habeshatechnologies.com"
                       target="_blank"
                       rel="noopener noreferrer"
                     >
                       Habesha Technologies PLC
-                    </a>                 {" "}
+                    </a>
                   </p>
                 </div>
-                {/* <!-- <div className="right">
-                        <ul>
-                            <li><a href="#">Terms & conditions</a></li>
-                            <li><a href="#">Privacy policy</a></li>
-                        </ul>
-                    </div> --> */}
               </div>
               {/* <!-- copyright area end --> */}
             </div>
