@@ -23,7 +23,7 @@ const page = () => {
       <Service/>
       <Feedback/>
       {/* <Projects/> */}
-      <GapTop/>
+       {/* <GapTop/>*/}
       {/* <Team/> */}
       <Blog/>
     </div>
