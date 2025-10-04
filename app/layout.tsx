@@ -22,6 +22,11 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 
 // ... (Metadata export)
+export const metadata: Metadata = {
+  title: "Green Power Systems PLC",
+  description:
+    "Green Power Systems PLC aims to become Africa’s most valued company by 2032, serving society through the creation of 200,000 business partners and 25 million employment opportunities.",
+};
 
 export default function RootLayout({
   children,
@@ -34,10 +39,6 @@ export default function RootLayout({
         <Header />
         {children}
         <Footer/>
-        {/* -------------------- SCRIPTS SECTION -------------------- */}
-
-        {/* Use the 'afterInteractive' strategy for most general-purpose scripts. */}
-        {/* The src path starts from the 'public' folder. */}
 
         <Script
           src="/assets/js/plugins/jquery.min.js"

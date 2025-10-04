@@ -7,7 +7,7 @@ type Props = {
 };
 
 const Page = ({ params }: Props) => {
-  const { slug } = params; // <-- extract slug
+  const { slug } = params; 
 
   return (
     <div>
