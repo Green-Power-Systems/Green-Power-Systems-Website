@@ -255,7 +255,7 @@ const Service = (props: Props) => {
                       <div className="col-lg-6">
                         <div className="thumbnail-area-left-image">
                           <img
-                            src="assets/images/green/other-2.jpg"
+                            src="assets/images/green/other-10.jpg"
                             alt="service"
                           />
                         </div>
@@ -419,7 +419,7 @@ const Service = (props: Props) => {
                       <div className="col-lg-6">
                         <div className="thumbnail-area-left-image">
                           <img
-                            src="assets/images/green/ev-2.jpg"
+                            src="assets/images/green/gallery/kas-200.jpg"
                             alt="service"
                           />
                         </div>
@@ -438,7 +438,7 @@ const Service = (props: Props) => {
                       <div className="col-lg-6">
                         <div className="thumbnail-area-left-image">
                           <img
-                            src="assets/images/green/wp-3.jpg"
+                            src="assets/images/green/gallery/ro50g.avif"
                             alt="service"
                           />
                         </div>
@@ -466,7 +466,7 @@ const Service = (props: Props) => {
                           <div className="col-lg-6">
                             <div className="thumbnail-img-sm-service">
                               <img
-                                src="assets/images/green/wp-1.jpg"
+                                src="assets/images/green/gallery/rom14.png"
                                 alt="service"
                               />
                             </div>

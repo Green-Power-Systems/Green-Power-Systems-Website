@@ -11,7 +11,7 @@ const Feedback = (props: Props) => {
             <div className="col-lg-6">
               <div className="rts-solution-left-area-left">
                 <div className="thumbnail">
-                  <img src="assets/images/green/other-4.jpg" alt="solution" />
+                  <img src="assets/images/green/feed-3.avif" alt="solution" />
                 </div>
                 <div className="small-image images">
                   <img src="assets/images/solution/02.jpg" alt="solution" />

@@ -13,7 +13,7 @@ const CompanyAbout = (props: Props) => {
               <div className="rts-about-left-image-area">
                 <div className="thumbnail">
                   <img
-                    src="assets/images/green/other-4.jpg"
+                    src="assets/images/green/feed-1.avif"
                     alt="solar energy"
                   />
                 </div>
