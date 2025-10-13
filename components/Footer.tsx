@@ -15,7 +15,7 @@ const Footer = (props: Props) => {
               <div className="single-footer-one-wrapper two">
                 <div className="single-footer-component first">
                   <a href="index.html" className="logo-area-footer">
-                    <img src="assets/images/green/logo-with-white-text-nobg.png" alt="logo" />
+                    <img src="/assets/images/green/logo-with-white-text-nobg.png" alt="logo" />
                   </a>
                   <div className="body mt--45">
                     <p className="disc">

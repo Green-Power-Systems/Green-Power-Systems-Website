@@ -43,8 +43,8 @@ const Header = (props: Props) => {
               className="logo-white logo-green"
               src={
                 scrolled
-                  ? "assets/images/green/logo-no-bg.png"
-                  : "assets/images/green/logo-with-white-text-nobg.png"
+                  ? "/assets/images/green/logo-no-bg.png"
+                  : "/assets/images/green/logo-with-white-text-nobg.png"
               }
               alt="logo"
             />
@@ -52,8 +52,8 @@ const Header = (props: Props) => {
               className="logo-dark logo-green"
               src={
                 scrolled
-                  ? "assets/images/green/Screenshot 2025-08-18 011342.png"
-                  : "assets/images/green/logo-with-white-text-nobg.png"
+                  ? "/assets/images/green/Screenshot 2025-08-18 011342.png"
+                  : "/assets/images/green/logo-with-white-text-nobg.png"
               }
               alt="logo"
             />
@@ -147,7 +147,7 @@ const Header = (props: Props) => {
           {/* Logo */}
           <div className="mb-8">
             <img
-              src="assets/images/green/logo-no-bg.png"
+              src="/assets/images/green/logo-no-bg.png"
               alt="Green Power Systems"
               className="h-12 logo-green"
             />
