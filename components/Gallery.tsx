@@ -47,7 +47,7 @@ const galleryData: GalleryItem[] = [
   },
   {
     id: 6,
-    imageSrc: "/assets/images/green/gallery/rom14.png",
+    imageSrc: "/assets/images/green/gallery/m14.jpg",
     title: "Model: RO-M-14",
     description:
       "The RO-M-14 is an advanced, microprocessor-controlled, 5-stage RO water purifier ideal for both high-volume commercial and luxury residential use",
