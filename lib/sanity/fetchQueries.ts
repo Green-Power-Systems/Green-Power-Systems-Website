@@ -1,5 +1,5 @@
 import { client } from "./client";
-import { fetchBlogPosts, fetchRecentPosts, fetchSingleBlog } from "./queries";
+import { fetchBlogPosts, fetchProducts, fetchRecentPosts, fetchSingleBlog } from "./queries";
 
 // Fetch blog posts
 export const getBlogPosts = async () => {
@@ -15,3 +15,8 @@ export const getSingleBlog = async (slug: string) => {
 export const getRecentPosts = async () => {
   return await client.fetch(fetchRecentPosts);
 };
+
+// Fetch Products
+export const getProducts = async () => {
+  return await client.fetch(fetchProducts);
+}

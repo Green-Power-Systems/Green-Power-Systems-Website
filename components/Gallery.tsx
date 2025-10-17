@@ -1,4 +1,8 @@
+export const dynamic = "force-dynamic";
 import React from "react";
+import { getProducts } from "@/lib/sanity/fetchQueries";
+import { urlForImage } from "@/lib/sanity/image";
+import { PortableText } from "next-sanity";
 
 // Define the shape for a single gallery item
 interface GalleryItem {
@@ -8,100 +12,12 @@ interface GalleryItem {
   description: string;
 }
 
-// Define the data for the gallery items
-const galleryData: GalleryItem[] = [
-  {
-    id: 1,
-    imageSrc: "/assets/images/green/gallery/kas-450.jpg",
-    title: "Model : Kas-Jan450",
-    description:
-      "EV Motor Power: 60 Kw, Battery : Lithium Ion, Capacity: 38.40 Kwh",
-  },
-  {
-    id: 2,
-    imageSrc: "/assets/images/green/gallery/kas-200.jpg",
-    title: "Model : Kas-Anna200",
-    description:
-      "EV Motor Power: 25 Kw, Battery : LifePo4, Capacity: 17.28 Kwh",
-  },
-  {
-    id: 3,
-    imageSrc: "/assets/images/green/gallery/kas-360.jpg",
-    title: "Model : Kas-Anna360",
-    description:
-      "EV Motor Power: 33 Kw, Battery : Ternary Lithium Ion, Capacity : 26.68Kwh",
-  },
-  {
-    id: 4,
-    imageSrc: "/assets/images/green/gallery/kas-320.jpg",
-    title: "Model : Kas-Pansahn 320",
-    description:
-      "EV Motor Power: 120 Kw, Battery : Lithium Ion, Capacity: 81.60 Kwh",
-  },
-  {
-    id: 5,
-    imageSrc: "/assets/images/green/gallery/ro50g.avif",
-    title: "Model: RO-50G-4",
-    description:
-      "This is a high-capacity, 5-stage RO under-sink water purifier managed by a microprocessor, certified by CE, ISO, and RoHS.",
-  },
-  {
-    id: 6,
-    imageSrc: "/assets/images/green/gallery/m14.jpg",
-    title: "Model: RO-M-14",
-    description:
-      "The RO-M-14 is an advanced, microprocessor-controlled, 5-stage RO water purifier ideal for both high-volume commercial and luxury residential use",
-  },
-  {
-    id: 7,
-    imageSrc: "/assets/images/green/gallery/ry14g.avif",
-    title: "Model: RY-14G-1",
-    description:
-      "The RY-14G-1 is an advanced, microprocessor-controlled, 5-stage RO water purification system delivering 188 L/day of pure.",
-  },
-  {
-    id: 8,
-    imageSrc: "/assets/images/green/gallery/power-cables.webp",
-    title: "Power Cables",
-    description:
-      "Robust submarine cables for seamless, long-distance data and power transmission across any body of water. ",
-  },
-  {
-    id: 9,
-    imageSrc: "/assets/images/green/gallery/compact-substations.jpeg",
-    title: "Compact Substations",
-    description:
-      "To effectively Provide Compact Substations, focus on their key customer benefits: space efficiency, speed of deployment, and comprehensive protection.",
-  },
-  {
-    id: 10,
-    imageSrc: "/assets/images/green/gallery/switch-gear-control-panel.jpg",
-    title: "Electric Switch Grears and Control Panels",
-    description:
-      "High-performance Electric Switchgear and Control Panels: Engineered for maximum system protection, precise control, and reliable power distribution",
-  },
-  {
-    id: 11,
-    imageSrc: "/assets/images/green/gallery/transformer.jpg",
-    title: "Transformers",
-    description:
-      "Maximize your energy return with our high-efficiency transformers, guaranteeing reliable power conversion and minimal energy loss for any application.",
-  },
-  {
-    id: 12,
-    imageSrc: "/assets/images/green/gallery/tire.jpeg",
-    title: "Tyres",
-    description:
-      "High-performance, durable tyres designed for maximum safety, comfort, and long-lasting road grip.",
-  },
-];
-
-// Define a constant for the desired image size (e.g., 300px by 300px)
 const IMAGE_SIZE = "300px";
 
 type Props = {};
 
-const Gallery = (props: Props) => {
+const Gallery = async (props: Props) => {
+  const galleryData = await getProducts();
   return (
     <div>
       <div className="rts-project-page-project rts-section-gap">
@@ -115,8 +31,11 @@ const Gallery = (props: Props) => {
           </div>
 
           <div className="row g-4">
-            {galleryData.map((item) => (
-              <div key={item.id} className="col-lg-4 col-md-6 col-sm-6 col-12">
+            {galleryData.map((item: any) => (
+              <div
+                key={item.slug.current}
+                className="col-lg-4 col-md-6 col-sm-6 col-12"
+              >
                 {/* 1. Apply size to the gallery-wrapper to create a uniform container */}
                 <div
                   className="gallery-wrapper"
@@ -128,7 +47,7 @@ const Gallery = (props: Props) => {
                 >
                   {/* 2. Apply styling to the image for full coverage and proper scaling */}
                   <img
-                    src={item.imageSrc}
+                    src={urlForImage(item.mainImage).url()}
                     alt={item.title}
                     style={{
                       width: "100%",
@@ -139,7 +58,10 @@ const Gallery = (props: Props) => {
                   />
 
                   {/* The clickable overlay for the image */}
-                  <a href={item.imageSrc} className="gallery-image">
+                  <a
+                    href={urlForImage(item.mainImage).url()}
+                    className="gallery-image"
+                  >
                     <div className="item-overlay">
                       <span>
                         <svg
@@ -171,14 +93,9 @@ const Gallery = (props: Props) => {
                   >
                     {item.title}
                   </h4>
-                  <p
-                    style={{
-                      fontSize: "1.5rem",
-                      color: "rgba(51, 51, 51, 0.7)",
-                    }}
-                  >
-                    {item.description}
-                  </p>
+                  <div>
+                    <PortableText value={item.description} />
+                  </div>
                 </div>
               </div>
             ))}
