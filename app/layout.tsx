@@ -25,7 +25,15 @@ import Footer from "@/components/Footer";
 export const metadata: Metadata = {
   title: "Green Power Systems PLC",
   description:
-    "Green Power Systems PLC aims to become Africa’s most valued company by 2032, serving society through the creation of 200,000 business partners and 25 million employment opportunities.",
+    "Green Power Systems PLC offers premium tire and cable solutions with supply, installation, and maintenance services for industrial, commercial, and utility sectors.",
+  openGraph: {
+    title: "Green Power Systems PLC",
+    description:
+      "Green Power Systems PLC offers premium tire and cable solutions with supply, installation, and maintenance services for industrial, commercial, and utility sectors.",
+    url: "https://www.greenpowersystemsplc.com",
+    siteName: "Green Power Systems PLC",
+    type: "website",
+  },
 };
 
 export default function RootLayout({
