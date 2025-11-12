@@ -215,9 +215,9 @@ const Footer = (props: Props) => {
                         <div className="info-content">
                           <a href="#">
                             <h6 className="title">
-                              CMC - MERI LOKE /WOSSEN ROAD <br /> KIDUS MICHAEL
-                              BUILDING 2nd <br />
-                              3rd & 4th FLOOR
+                              GERJI  <br /> SELAM
+                              BUILDING  <br />
+                              5th & 6th FLOOR
                             </h6>
                           </a>
                           <span>Addis Ababa, Ethiopia</span>

@@ -109,7 +109,7 @@ const ContactUsForm = (props: Props) => {
             <div className="col-lg-5 col-md-12 col-sm-12 col-12">
               <div className="map-area-wrapper">
                 <iframe
-                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d8069774.227153786!2d29.621267774999996!3d9.034596299999997!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x164b91e914422f79%3A0x95b314d9f6de5cfd!2zS2lkdXMgTWljaGFlbCBCdWlsZGluZyB8IFdlc2VuIHwg4YmF4Yux4Yi1IOGImuGKq-GKpOGIjSDhiIXhipXhjLsgfCDhi4jhiLDhipU!5e0!3m2!1sen!2set!4v1758216688100!5m2!1sen!2set"
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d126103.05428734896!2d38.66950664335938!3d8.997850700000008!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x164b85a8d5d33137%3A0x51d0cd723f979d39!2sSelam%20building!5e0!3m2!1sen!2set!4v1762959784662!5m2!1sen!2set"
                   width="100%"
                   height="690"
                   style={{ border: 0 }}

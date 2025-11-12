@@ -113,12 +113,11 @@ const ContactInfo = (props: Props) => {
                 <div className="content">
                   <span>Visit Us</span>
                   <a
-                    href="https://www.google.com/maps/search/?api=1&query=Wossen+Kidus+Michael+Building,+Addis+Ababa,+Ethiopia"
+                    href="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d126103.05428734896!2d38.66950664335938!3d8.997850700000008!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x164b85a8d5d33137%3A0x51d0cd723f979d39!2sSelam%20building!5e0!3m2!1sen!2set!4v1762959784662!5m2!1sen!2set"
                     target="_blank"
                   >
                     <h5 className="title">
-                      CMC - MERI LOKE /WOSSEN ROAD, KIDUS MICHAEL BUILDING 2nd,
-                      3rd & 4th FLOOR
+                      GERJI , SELAM BUILDING, 5th & 6th FLOOR
                     </h5>
                   </a>
                 </div>
