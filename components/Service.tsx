@@ -463,15 +463,15 @@ const Service = (props: Props) => {
                           </p>
                         </div>
                         <div className="row">
-                          <div className="col-lg-6">
-                            <div className="thumbnail-img-sm-service">
+                          <div className="col-lg-12">
+                            {/* <div className="thumbnail-img-sm-service">
                               <img
-                                src="assets/images/green/gallery/rom14.png"
+                                src="assets/images/green/gallery/ro50g.avif"
                                 alt="service"
                               />
-                            </div>
+                            </div> */}
                           </div>
-                          <div className="col-lg-6">
+                          <div className="col-lg-12">
                             <div className="service-singlew-main-wrapper-sm">
                               {/* <!-- single start --> */}
                               <div className="single-service">

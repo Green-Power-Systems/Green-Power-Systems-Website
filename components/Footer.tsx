@@ -15,36 +15,38 @@ const Footer = (props: Props) => {
               <div className="single-footer-one-wrapper two">
                 <div className="single-footer-component first">
                   <a href="index.html" className="logo-area-footer">
-                    <img src="/assets/images/green/logo-with-white-text-nobg.png" alt="logo" />
+                    <img
+                      src="/assets/images/green/logo-with-white-text-nobg.png"
+                      alt="logo"
+                    />
                   </a>
                   <div className="body mt--45">
                     <p className="disc">
-                      Green Power Systems PLC is committed {" "}
-                      <br />
-                      to sustainability and responsible {" "}
-                      <br />
+                      Green Power Systems PLC is committed <br />
+                      to sustainability and responsible <br />
                       business practices.
                     </p>
                     <div className="rts-social-style-one">
                       <ul>
                         <li>
-                          <a href="#">
-                            <i className="fa-brands fa-facebook-f"></i>
+                          <a
+                            href="https://linkedin.com/in/green-power-systems-1ba8873a6"
+                            target="_blank"
+                          >
+                            <i className="fa-brands fa-linkedin-in"></i>
                           </a>
                         </li>
                         <li>
-                          <a href="#">
+                          <a
+                            target="_blank"
+                            href="https://x.com/GreenPower99419"
+                          >
                             <i className="fa-brands fa-twitter"></i>
                           </a>
                         </li>
                         <li>
-                          <a href="#">
-                            <i className="fa-brands fa-youtube"></i>
-                          </a>
-                        </li>
-                        <li>
-                          <a href="#">
-                            <i className="fa-brands fa-linkedin-in"></i>
+                          <a target="_blank" href="https://facebook.com">
+                            <i className="fa-brands fa-facebook-f"></i>
                           </a>
                         </li>
                       </ul>
@@ -192,6 +194,9 @@ const Footer = (props: Props) => {
                               greenpowersystemsplc@gmail.com
                             </h6>
                           </a>
+                          <a href="mailto:sales@gpsfe.com">
+                            <h6 className="title">sales@gpsfe.com</h6>
+                          </a>
                           <span>Email us for query</span>
                         </div>
                       </div>
@@ -215,8 +220,7 @@ const Footer = (props: Props) => {
                         <div className="info-content">
                           <a href="#">
                             <h6 className="title">
-                              GERJI  <br /> SELAM
-                              BUILDING  <br />
+                              GERJI <br /> SELAM BUILDING <br />
                               5th & 6th FLOOR
                             </h6>
                           </a>
