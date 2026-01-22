@@ -195,7 +195,7 @@ const Footer = (props: Props) => {
                             </h6>
                           </a>
                           <a href="mailto:sales@gpsfe.com">
-                            <h6 className="title">sales@gpsfe.com</h6>
+                            <h6 className="title">sales@gpsfe.com {""}</h6>
                           </a>
                           <span>Email us for query</span>
                         </div>
