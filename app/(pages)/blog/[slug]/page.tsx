@@ -1,13 +1,12 @@
 import SingleBlog from "@/components/blog/SingleBlog";
 import Breadcrumb from "@/components/Breadcrumb";
-import React from "react";
 
 type Props = {
-  params: { slug: string };
+  params: Promise<{ slug: string }>; // In Next 15/16, params is a Promise
 };
 
-const Page = ({ params }: Props) => {
-  const { slug } = params; 
+const Page = async ({ params }: Props) => {
+  const { slug } = await params; // Await the promise here!
 
   return (
     <div>
