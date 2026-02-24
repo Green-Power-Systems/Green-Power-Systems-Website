@@ -416,11 +416,13 @@ const Service = (props: Props) => {
                           </a>
                         </div>
                       </div>
-                      <div className="col-lg-6">
+                      <div className="col-lg-6 ">
                         <div className="thumbnail-area-left-image">
                           <img
-                            src="assets/images/green/gallery/kas-200.jpg"
+                            src="assets/images/green/byd.jpeg"
                             alt="service"
+                            width="800"
+                            height="700"
                           />
                         </div>
                       </div>
