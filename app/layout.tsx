@@ -21,6 +21,8 @@ import "@/assets/css/style.css";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 
+const inter = Inter({ subsets: ["latin"], display: 'swap' });
+
 // ... (Metadata export)
 export const metadata: Metadata = {
   title: "Green Power Systems PLC",
@@ -42,11 +44,11 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="en" className={inter.className}>
       <body>
         <Header />
         {children}
-        <Footer/>
+        <Footer />
 
         <Script
           src="/assets/js/plugins/jquery.min.js"
