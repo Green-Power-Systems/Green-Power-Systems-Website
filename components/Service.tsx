@@ -422,7 +422,7 @@ const Service = (props: Props) => {
                             src="assets/images/green/byd.jpeg"
                             alt="service"
                             width="800"
-                            height="700"
+                            height="700" 
                           />
                         </div>
                       </div>
