@@ -22,7 +22,7 @@ const About = (props: Props) => {
               <div className="about-lefta-area-solari-2 pb--150">
                 <div className="thumbnail-image-lg">
                   <Image
-                    src="/assets/images/green/other-1.webp"
+                    src="/assets/images/green/other-1.jpg"
                     alt="about"
                     width={600}
                     height={800}
