@@ -1,4 +1,5 @@
 import React from 'react'
+import Image from 'next/image'
 
 type Props = {}
 
@@ -22,9 +23,9 @@ const Facts = (props: Props) => {
                 </p>
                 <div className="row">
                   <div className="col-lg-10">
-                    {/* <!-- rts progress bar area start --> */}
+                    {/* */}
                     <div className="rts-progres-bar-area-one">
-                      {/* <!-- single progress --> */}
+                      {/* */}
                       <div className="single-progress-area-h4">
                         <div className="progress-top">
                           <p className="name">Solar energy</p>
@@ -41,8 +42,8 @@ const Facts = (props: Props) => {
                           ></div>
                         </div>
                       </div>
-                      {/* <!-- single progress --> */}
-                      {/* <!-- single progress --> */}
+                      {/* */}
+                      {/* */}
                       <div className="single-progress-area-h4">
                         <div className="progress-top">
                           <p className="name">Electric Vehicles</p>
@@ -59,8 +60,8 @@ const Facts = (props: Props) => {
                           ></div>
                         </div>
                       </div>
-                      {/* <!-- single progress --> */}
-                      {/* <!-- single progress --> */}
+                      {/* */}
+                      {/* */}
                       <div className="single-progress-area-h4">
                         <div className="progress-top">
                           <p className="name">Water Treatment Systems</p>
@@ -77,9 +78,9 @@ const Facts = (props: Props) => {
                           ></div>
                         </div>
                       </div>
-                      {/* <!-- single progress --> */}
+                      {/* */}
                     </div>
-                    {/* <!-- rts progress bar area end --> */}
+                    {/* */}
                   </div>
                 </div>
               </div>
@@ -87,7 +88,16 @@ const Facts = (props: Props) => {
             <div className="col-lg-7 mt_sm--40">
               <div className="map-area-h3">
                 <div className="thumbnail">
-                  <img src="assets/images/green/africa_map.png" alt="" />
+                  <Image 
+                    src="/assets/images/green/africa_map.png" 
+                    alt="Africa Map" 
+                    width={700} 
+                    height={500}
+                    style={{
+                      width: '100%',
+                      height: 'auto',
+                    }}
+                  />
                 </div>
               </div>
             </div>
