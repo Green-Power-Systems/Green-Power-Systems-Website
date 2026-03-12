@@ -1,6 +1,10 @@
 "use client";
 import React, { useEffect, useState } from "react";
 import { X, Facebook, Twitter, Youtube, Linkedin } from "lucide-react";
+import Image from "next/image";
+import logowithoutbg from "@/assets/images/green/logo-no-bg.png"
+import logowithwhite from "@/assets/images/green/logo-with-white-text-nobg.png";
+import logoscreenshot from "@/assets/images/green/Screenshot 2025-08-18 011342.png";
 
 type Props = {};
 
@@ -39,21 +43,21 @@ const Header = (props: Props) => {
       <header className="header-three header--sticky">
         <div className="header-left">
           <a href="/" className="logo-area">
-            <img
+            <Image
               className="logo-white logo-green"
               src={
                 scrolled
-                  ? "/assets/images/green/logo-no-bg.png"
-                  : "/assets/images/green/logo-with-white-text-nobg.png"
+                  ? logowithoutbg
+                  : logowithwhite
               }
               alt="logo"
             />
-            <img
+            <Image
               className="logo-dark logo-green"
               src={
                 scrolled
-                  ? "/assets/images/green/Screenshot 2025-08-18 011342.png"
-                  : "/assets/images/green/logo-with-white-text-nobg.png"
+                  ? logoscreenshot
+                  : logowithwhite
               }
               alt="logo"
             />
@@ -146,8 +150,8 @@ const Header = (props: Props) => {
         <div className="p-4 flex flex-col h-full relative">
           {/* Logo */}
           <div className="mb-8">
-            <img
-              src="/assets/images/green/logo-no-bg.png"
+            <Image
+              src={logowithoutbg}       
               alt="Green Power Systems"
               className="h-12 logo-green"
             />

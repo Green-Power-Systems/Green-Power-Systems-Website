@@ -14003,10 +14003,7 @@ nav ul li a {
 .rts-banner-three-solari {
   position: relative;
   z-index: 1;
-  background: url(../images/green/hero-bg-3.jpg);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+  overflow: hidden; /* Ensures the image doesn't bleed out */
 }
 
 .rts-banner-three-solari::before {

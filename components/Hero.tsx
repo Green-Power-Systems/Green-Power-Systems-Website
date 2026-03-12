@@ -1,12 +1,23 @@
-import React from 'react'
+import React from "react";
+import Image from "next/image";
 
-type Props = {}
+type Props = {};
 
 const Hero = (props: Props) => {
   return (
     <div>
-      <div className="rts-banner-three-solari">
-        <div className="container-full">
+      {/* Added relative and overflow-hidden to contain the background image */}
+      <div className="rts-banner-three-solari relative overflow-hidden">
+        {/* Next.js Optimized Background Image */}
+        <Image
+          src="/assets/images/green/hero-bg-3.jpg"
+          alt="Hero Background"
+          fill
+          priority // Important for LCP (Largest Contentful Paint) since it's the hero section
+          className="object-cover -z-10" // -z-10 keeps it behind the content
+        />
+
+        <div className="container-full relative z-10">
           <div className="row">
             <div className="col-lg-12 order-xl-1 order-lg-1 order-md-2 order-sm-2 order-2">
               <div className="left-banner-content-area-two">
@@ -24,10 +35,7 @@ const Hero = (props: Props) => {
                 </p>
 
                 <div className="baner-three-button-area">
-                  <a
-                    href="appoinment.html"
-                    className="rts-btn btn-primary skew-up"
-                  >
+                  <a href="/about" className="rts-btn btn-primary skew-up">
                     Learn More
                   </a>
                   <div className="call-button">
@@ -53,7 +61,7 @@ const Hero = (props: Props) => {
           </div>
         </div>
 
-        <div className="marquee">
+        <div className="marquee relative z-10">
           <div className="marquee__item">
             <div className="banner-marque-bottom">
               <p>Renewable Energy</p>
@@ -82,6 +90,6 @@ const Hero = (props: Props) => {
       </div>
     </div>
   );
-}
+};
 
-export default Hero
+export default Hero;
