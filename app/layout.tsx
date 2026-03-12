@@ -3,16 +3,11 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google"; // Assuming you have a font import
 import Script from "next/script"; // 👈 Import the Script component
+import ClientStyleLoader from "@/components/ClientStyleLoader";
 
 import "./globals.css";
 //  <!-- fontawesome css -->
-import "@/assets/css/plugins/fontawesome-6.css";
 
-import "@/assets/css/plugins/swiper.css";
-import "@/assets/css/plugins/unicons.css";
-import "@/assets/css/plugins/metismenu.css";
-import "@/assets/css/vendor/animate.css";
-import "@/assets/css/vendor/magnific-popup.css";
     // <!-- bootstrap css -->
 import "@/assets/css/vendor/bootstrap.min.css";
     // <!-- Custom css -->
@@ -46,6 +41,7 @@ export default function RootLayout({
   return (
     <html lang="en" className={inter.className}>
       <body>
+        <ClientStyleLoader />
         <Header />
         {children}
         <Footer />
