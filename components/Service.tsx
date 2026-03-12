@@ -1,4 +1,13 @@
 import React from 'react'
+import Image from 'next/image'
+import service1 from "@/assets/images/green/other-10.jpg";
+import service2 from "@/assets/images/service/22.jpg";
+import service3 from "@/assets/images/service/dt.png";
+import service4 from "@/assets/images/service/dt.png";
+import service5 from "@/assets/images/green/ev-1.jpg";
+import service6 from "@/assets/images/green/byd.jpeg";
+import service7 from "@/assets/images/green/tire-2.jpg";
+import service8 from "@/assets/images/green/tire-1.jpg";
 
 type Props = {}
 
@@ -254,9 +263,11 @@ const Service = (props: Props) => {
                     <div className="row">
                       <div className="col-lg-6">
                         <div className="thumbnail-area-left-image">
-                          <img
-                            src="assets/images/green/other-10.jpg"
-                            alt="service"
+                          <Image
+                            src={service1}
+                            alt="Service"
+                            width={500}
+                            height={300}
                           />
                         </div>
                       </div>
@@ -281,9 +292,11 @@ const Service = (props: Props) => {
                         <div className="row">
                           <div className="col-lg-6">
                             <div className="thumbnail-img-sm-service">
-                              <img
-                                src="assets/images/service/22.jpg"
-                                alt="service"
+                              <Image
+                                src={service2}
+                                alt="Service"
+                                // width={500}
+                                // height={300}
                               />
                             </div>
                           </div>
@@ -291,37 +304,25 @@ const Service = (props: Props) => {
                             <div className="service-singlew-main-wrapper-sm">
                               {/* <!-- single start --> */}
                               <div className="single-service">
-                                <img
-                                  src="assets/images/service/dt.png"
-                                  alt="service"
-                                />
+                                <Image src={service3} alt="service" />
                                 <p>Installation Services</p>
                               </div>
                               {/* <!-- single end -->
                             <!-- single start --> */}
                               <div className="single-service">
-                                <img
-                                  src="assets/images/service/dt.png"
-                                  alt="service"
-                                />
+                                <Image src={service4} alt="service" />
                                 <p>Maintenance and Repair Services</p>
                               </div>
                               {/* <!-- single end -->
                             <!-- single start --> */}
                               <div className="single-service">
-                                <img
-                                  src="assets/images/service/dt.png"
-                                  alt="service"
-                                />
+                                <Image src={service4} alt="service" />
                                 <p>Self Cleaning Tracker</p>
                               </div>
                               {/* <!-- single end -->
                             <!-- single start --> */}
                               <div className="single-service">
-                                <img
-                                  src="assets/images/service/dt.png"
-                                  alt="service"
-                                />
+                                <Image src={service4} alt="service" />
                                 <p>Energy Monitoring and Optimization</p>
                               </div>
                               {/* <!-- single end --> */}
@@ -364,47 +365,32 @@ const Service = (props: Props) => {
                         <div className="row">
                           <div className="col-lg-6">
                             <div className="thumbnail-img-sm-service">
-                              <img
-                                src="assets/images/green/ev-1.jpg"
-                                alt="service"
-                              />
+                              <Image src={service5} alt="service" />
                             </div>
                           </div>
                           <div className="col-lg-6">
                             <div className="service-singlew-main-wrapper-sm">
                               {/* <!-- single start --> */}
                               <div className="single-service">
-                                <img
-                                  src="assets/images/service/dt.png"
-                                  alt="service"
-                                />
+                                <Image src={service4} alt="service" />
                                 <p>City Taxi/Ride EV Cars</p>
                               </div>
                               {/* <!-- single end -->
                             <!-- single start --> */}
                               <div className="single-service">
-                                <img
-                                  src="assets/images/service/dt.png"
-                                  alt="service"
-                                />
+                                <Image src={service4} alt="service" />
                                 <p>Hotel Shuttle/Tourist /Rental </p>
                               </div>
                               {/* <!-- single end -->
                             <!-- single start --> */}
                               <div className="single-service">
-                                <img
-                                  src="assets/images/service/dt.png"
-                                  alt="service"
-                                />
+                                <Image src={service4} alt="service" />
                                 <p>City &Distance Public Transporte</p>
                               </div>
                               {/* <!-- single end -->
                             <!-- single start --> */}
                               <div className="single-service">
-                                <img
-                                  src="assets/images/service/dt.png"
-                                  alt="service"
-                                />
+                                <Image src={service4} alt="service" />
                                 <p>Rental Off-Road</p>
                               </div>
                               {/* <!-- single end --> */}
@@ -418,12 +404,7 @@ const Service = (props: Props) => {
                       </div>
                       <div className="col-lg-6 ">
                         <div className="thumbnail-area-left-image">
-                          <img
-                            src="assets/images/green/byd.jpeg"
-                            alt="service"
-                            width="800"
-                            height="700" 
-                          />
+                          <Image src={service6} alt="service" />
                         </div>
                       </div>
                     </div>
@@ -437,86 +418,165 @@ const Service = (props: Props) => {
                   >
                     {/* <!-- single tab content area start --> */}
                     <div className="row">
+                      {/* Left Side: Summary or Key Highlight (Instead of Image) */}
                       <div className="col-lg-6">
-                        <div className="thumbnail-area-left-image">
-                          <img
-                            src="assets/images/green/gallery/ro50g.avif"
-                            alt="service"
-                          />
+                        <div
+                          className="thumbnail-area-left-image"
+                          style={{
+                            borderLeft: "4px solid var(--color-primary)",
+                            paddingLeft: "30px",
+                          }}
+                        >
+                          <h2
+                            className="title"
+                            style={{
+                              fontSize: "2.5rem",
+                              fontWeight: "700",
+                              lineHeight: "1.2",
+                            }}
+                          >
+                            Sustainable <br />
+                            <span style={{ color: "var(--color-primary)" }}>
+                              Water Solutions
+                            </span>{" "}
+                            <br />
+                            for the Future.
+                          </h2>
+                          <div
+                            className="mt--30"
+                            style={{
+                              height: "2px",
+                              width: "60px",
+                              background: "var(--color-primary)",
+                            }}
+                          ></div>
                         </div>
                       </div>
+
+                      {/* Right Side: Content and Feature List */}
                       <div className="col-lg-6 pl--60 pl_sm--10 mt_sm--50">
                         <div className="inner-content-service-right-solari">
-                          <h3 className="title">Water Treatement Systems</h3>
+                          <h3 className="title">Water Treatment Systems</h3>
                           <p className="disc">
                             At Green Power Systems, we provide advanced water
                             treatment solutions designed to ensure safe, clean,
                             and sustainable water for industrial, commercial,
                             and residential use. Our systems combine innovative
                             technology with eco-friendly practices to remove
-                            contaminants, improve water quality, and support
-                            efficient water management.
+                            contaminants.
                           </p>
                           <p className="disc">
                             From filtration and purification to wastewater
                             recycling, we deliver reliable solutions tailored to
-                            meet your specific needs, promoting health,
-                            sustainability, and operational efficiency.
+                            meet your specific needs.
                           </p>
                         </div>
-                        <div className="row">
+
+                        <div className="row mt--30">
                           <div className="col-lg-12">
-                            {/* <div className="thumbnail-img-sm-service">
-                              <img
-                                src="assets/images/green/gallery/ro50g.avif"
-                                alt="service"
-                              />
-                            </div> */}
-                          </div>
-                          <div className="col-lg-12">
-                            <div className="service-singlew-main-wrapper-sm">
-                              {/* <!-- single start --> */}
-                              <div className="single-service">
-                                <img
-                                  src="assets/images/service/dt.png"
-                                  alt="service"
-                                />
-                                <p>Filtration, Purification, Recycling</p>
+                            <div
+                              className="service-singlew-main-wrapper-sm"
+                              style={{
+                                display: "grid",
+                                gridTemplateColumns: "1fr 1fr",
+                                gap: "20px",
+                              }}
+                            >
+                              {/* Item 1 */}
+                              <div
+                                className="single-service"
+                                style={{
+                                  display: "flex",
+                                  alignItems: "center",
+                                  gap: "15px",
+                                }}
+                              >
+                                <div
+                                  style={{
+                                    minWidth: "8px",
+                                    height: "8px",
+                                    borderRadius: "50%",
+                                    background: "var(--color-primary)",
+                                  }}
+                                ></div>
+                                <p style={{ margin: 0, fontWeight: "500" }}>
+                                  Filtration & Purification
+                                </p>
                               </div>
-                              {/* <!-- single end -->
-                            <!-- single start --> */}
-                              <div className="single-service">
-                                <img
-                                  src="assets/images/service/dt.png"
-                                  alt="service"
-                                />
-                                <p>Water Quality Solutions</p>
+
+                              {/* Item 2 */}
+                              <div
+                                className="single-service"
+                                style={{
+                                  display: "flex",
+                                  alignItems: "center",
+                                  gap: "15px",
+                                }}
+                              >
+                                <div
+                                  style={{
+                                    minWidth: "8px",
+                                    height: "8px",
+                                    borderRadius: "50%",
+                                    background: "var(--color-primary)",
+                                  }}
+                                ></div>
+                                <p style={{ margin: 0, fontWeight: "500" }}>
+                                  Water Quality Solutions
+                                </p>
                               </div>
-                              {/* <!-- single end -->
-                            <!-- single start --> */}
-                              <div className="single-service">
-                                <img
-                                  src="assets/images/service/dt.png"
-                                  alt="service"
-                                />
-                                <p>Wastewater Management Services</p>
+
+                              {/* Item 3 */}
+                              <div
+                                className="single-service"
+                                style={{
+                                  display: "flex",
+                                  alignItems: "center",
+                                  gap: "15px",
+                                }}
+                              >
+                                <div
+                                  style={{
+                                    minWidth: "8px",
+                                    height: "8px",
+                                    borderRadius: "50%",
+                                    background: "var(--color-primary)",
+                                  }}
+                                ></div>
+                                <p style={{ margin: 0, fontWeight: "500" }}>
+                                  Wastewater Management
+                                </p>
                               </div>
-                              {/* <!-- single end -->
-                            <!-- single start --> */}
-                              <div className="single-service">
-                                <img
-                                  src="assets/images/service/dt.png"
-                                  alt="service"
-                                />
-                                <p>Clean Water Technology</p>
+
+                              {/* Item 4 */}
+                              <div
+                                className="single-service"
+                                style={{
+                                  display: "flex",
+                                  alignItems: "center",
+                                  gap: "15px",
+                                }}
+                              >
+                                <div
+                                  style={{
+                                    minWidth: "8px",
+                                    height: "8px",
+                                    borderRadius: "50%",
+                                    background: "var(--color-primary)",
+                                  }}
+                                ></div>
+                                <p style={{ margin: 0, fontWeight: "500" }}>
+                                  Clean Water Tech
+                                </p>
                               </div>
-                              {/* <!-- single end --> */}
                             </div>
                           </div>
 
-                          <a href="/service" className="rts-btn btn-primary">
-                            More Service
-                          </a>
+                          <div className="col-lg-12 mt--40">
+                            <a href="/service" className="rts-btn btn-primary">
+                              More Service
+                            </a>
+                          </div>
                         </div>
                       </div>
                     </div>
@@ -551,47 +611,32 @@ const Service = (props: Props) => {
                         <div className="row">
                           <div className="col-lg-6">
                             <div className="thumbnail-img-sm-service">
-                              <img
-                                src="assets/images/green/tire-2.jpg"
-                                alt="service"
-                              />
+                              <Image src={service7} alt="service" />
                             </div>
                           </div>
                           <div className="col-lg-6">
                             <div className="service-singlew-main-wrapper-sm">
                               {/* <!-- single start --> */}
                               <div className="single-service">
-                                <img
-                                  src="assets/images/service/dt.png"
-                                  alt="service"
-                                />
+                                <Image src={service4} alt="service" />
                                 <p>Supply, Installation, Maintenance</p>
                               </div>
                               {/* <!-- single end -->
                             <!-- single start --> */}
                               <div className="single-service">
-                                <img
-                                  src="assets/images/service/dt.png"
-                                  alt="service"
-                                />
+                                <Image src={service4} alt="service" />
                                 <p>Repair, Replacement, Support</p>
                               </div>
                               {/* <!-- single end -->
                             <!-- single start --> */}
                               <div className="single-service">
-                                <img
-                                  src="assets/images/service/dt.png"
-                                  alt="service"
-                                />
+                                <Image src={service4} alt="service" />
                                 <p>Industrial Cable Solutions</p>
                               </div>
                               {/* <!-- single end -->
                             <!-- single start --> */}
                               <div className="single-service">
-                                <img
-                                  src="assets/images/service/dt.png"
-                                  alt="service"
-                                />
+                                <Image src={service4} alt="service" />
                                 <p>Durable Tire Services</p>
                               </div>
                               {/* <!-- single end --> */}
@@ -605,10 +650,7 @@ const Service = (props: Props) => {
                       </div>
                       <div className="col-lg-6">
                         <div className="thumbnail-area-left-image">
-                          <img
-                            src="assets/images/green/tire-1.jpg"
-                            alt="service"
-                          />
+                          <Image src={service8} alt="service" />
                         </div>
                       </div>
                     </div>
