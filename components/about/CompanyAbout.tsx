@@ -1,6 +1,7 @@
-import React from 'react'
+import React from "react";
+import Image from "next/image";
 
-type Props = {}
+type Props = {};
 
 const CompanyAbout = (props: Props) => {
   return (
@@ -9,19 +10,28 @@ const CompanyAbout = (props: Props) => {
         <div className="container">
           <div className="row align-items-center">
             <div className="col-lg-6">
-              {/* <!-- about inner solar energy --> */}
+              {/* */}
               <div className="rts-about-left-image-area">
-                <div className="thumbnail">
-                  <img
-                    src="assets/images/green/feed-1.avif"
+                <div
+                  className="thumbnail"
+                  style={{
+                    position: "relative",
+                    width: "100%",
+                    height: "500px",
+                  }}
+                >
+                  <Image
+                    src="/assets/images/green/feed-1.avif"
                     alt="solar energy"
+                    fill
+                    style={{ objectFit: "cover" }}
                   />
                 </div>
               </div>
-              {/* <!-- about inner solar energy end --> */}
+              {/* */}
             </div>
             <div className="col-lg-6">
-              {/* <!-- about nrighht content area start --> */}
+              {/* */}
               <div className="about-right-content-area-solar-energy">
                 <div className="title-area-left">
                   <p className="pre">
@@ -32,7 +42,7 @@ const CompanyAbout = (props: Props) => {
                     Clean Energy
                   </h2>
                 </div>
-                {/* <!-- tab area start about --> */}
+                {/* */}
                 <ul
                   className="nav custom-nav-soalr-about nav-pills"
                   id="pills-tab"
@@ -82,7 +92,7 @@ const CompanyAbout = (props: Props) => {
                   </li>
                 </ul>
 
-                {/* <!-- nav content start --> */}
+                {/* */}
                 <div className="tab-content" id="pills-tabContent">
                   <div
                     className="tab-pane fade show active"
@@ -90,7 +100,7 @@ const CompanyAbout = (props: Props) => {
                     role="tabpanel"
                     aria-labelledby="pills-home-tab"
                   >
-                    {/* <!-- single nav content start --> */}
+                    {/* */}
                     <div className="single-about-content-solar">
                       <p className="disc">
                         At Green Power Systems, we deliver reliable and
@@ -101,79 +111,71 @@ const CompanyAbout = (props: Props) => {
                       </p>
                       <div className="row align-items-center">
                         <div className="col-lg-6">
-                          <div className="left-area-wrapper">
-                            <img
-                              src="assets/images/green/bread-cuamb-banner-2.jpg"
+                          <div
+                            className="left-area-wrapper"
+                            style={{
+                              position: "relative",
+                              width: "100%",
+                              height: "300px",
+                            }}
+                          >
+                            <Image
+                              src="/assets/images/green/bread-cuamb-banner-2.jpg"
                               alt="about"
+                              fill
+                              style={{ objectFit: "cover" }}
                             />
                           </div>
                         </div>
                         <div className="col-lg-6">
-                          {/* <!-- about ncheck wrapper main --> */}
+                          {/* */}
                           <div className="single-ckeck-wrapper">
-                            <img
-                              src="assets/images/about/dt.png"
+                            <Image
+                              src="/assets/images/about/dt.png"
                               alt="dotted"
+                              width={20}
+                              height={20}
                             />
                             <p>Experienced Team of Experts</p>
                           </div>
-                          {/* <!-- about ncheck wrapper main end -->
-                                            <!-- about ncheck wrapper main --> */}
                           <div className="single-ckeck-wrapper">
-                            <img
-                              src="assets/images/about/dt.png"
+                            <Image
+                              src="/assets/images/about/dt.png"
                               alt="dotted"
+                              width={20}
+                              height={20}
                             />
                             <p>Very first Customers Service</p>
                           </div>
-                          {/* <!-- about ncheck wrapper main end -->
-                                            <!-- about ncheck wrapper main --> */}
                           <div className="single-ckeck-wrapper">
-                            <img
-                              src="assets/images/about/dt.png"
+                            <Image
+                              src="/assets/images/about/dt.png"
                               alt="dotted"
+                              width={20}
+                              height={20}
                             />
                             <p>Flexiblity Work Environment</p>
                           </div>
-                          {/* <!-- about ncheck wrapper main end -->
-                                            <!-- about ncheck wrapper main --> */}
                           <div className="single-ckeck-wrapper">
-                            <img
-                              src="assets/images/about/dt.png"
+                            <Image
+                              src="/assets/images/about/dt.png"
                               alt="dotted"
+                              width={20}
+                              height={20}
                             />
                             <p>Provide Quality Service</p>
                           </div>
-                          {/* <!-- about ncheck wrapper main end --> */}
                         </div>
                       </div>
-                      {/* <!-- vedio area start --> */}
-                      {/* <div className="vedio-area-start">
-                        <a href="#" className="rts-btn btn-primary">
-                          Read More{" "}
-                          <i className="fa-regular fa-arrow-right"></i>
-                        </a>
-                        <div className="vedio-icone">
-                          <a className=" play-video video-play-button" href="#">
-                            <span></span>
-                            <p className="text">Play Vedio</p>
-                          </a>
-                          <div className="video-overlay">
-                            <a className="video-overlay-close">×</a>
-                          </div>
-                        </div>
-                      </div> */}
-                      {/* <!-- vedio area end --> */}
                     </div>
-                    {/* <!-- single nav content end --> */}
                   </div>
+
                   <div
                     className="tab-pane fade"
                     id="pills-profile"
                     role="tabpanel"
                     aria-labelledby="pills-profile-tab"
                   >
-                    {/* <!-- single nav content start --> */}
                     <div className="single-about-content-solar">
                       <p className="disc">
                         Our mission at Green Power Systems is to empower Africa
@@ -183,76 +185,70 @@ const CompanyAbout = (props: Props) => {
                       </p>
                       <div className="row align-items-center">
                         <div className="col-lg-6">
-                          <div className="left-area-wrapper">
-                            <img src="assets/images/green/other-1.jpg" alt="about" />
+                          <div
+                            className="left-area-wrapper"
+                            style={{
+                              position: "relative",
+                              width: "100%",
+                              height: "300px",
+                            }}
+                          >
+                            <Image
+                              src="/assets/images/green/other-1.jpg"
+                              alt="about"
+                              fill
+                              style={{ objectFit: "cover" }}
+                            />
                           </div>
                         </div>
                         <div className="col-lg-6">
-                          {/* <!-- about ncheck wrapper main --> */}
                           <div className="single-ckeck-wrapper">
-                            <img
-                              src="assets/images/about/dt.png"
+                            <Image
+                              src="/assets/images/about/dt.png"
                               alt="dotted"
+                              width={20}
+                              height={20}
                             />
                             <p>Experienced Team of Exparts</p>
                           </div>
-                          {/* <!-- about ncheck wrapper main end -->
-                                            <!-- about ncheck wrapper main --> */}
                           <div className="single-ckeck-wrapper">
-                            <img
-                              src="assets/images/about/dt.png"
+                            <Image
+                              src="/assets/images/about/dt.png"
                               alt="dotted"
+                              width={20}
+                              height={20}
                             />
                             <p>Very first Customers Service</p>
                           </div>
-                          {/* <!-- about ncheck wrapper main end -->
-                                            <!-- about ncheck wrapper main --> */}
                           <div className="single-ckeck-wrapper">
-                            <img
-                              src="assets/images/about/dt.png"
+                            <Image
+                              src="/assets/images/about/dt.png"
                               alt="dotted"
+                              width={20}
+                              height={20}
                             />
                             <p>Flexiblity Work Environment</p>
                           </div>
-                          {/* <!-- about ncheck wrapper main end -->
-                                            <!-- about ncheck wrapper main --> */}
                           <div className="single-ckeck-wrapper">
-                            <img
-                              src="assets/images/about/dt.png"
+                            <Image
+                              src="/assets/images/about/dt.png"
                               alt="dotted"
+                              width={20}
+                              height={20}
                             />
                             <p>Provide Quality Service</p>
                           </div>
-                          {/* <!-- about ncheck wrapper main end --> */}
                         </div>
                       </div>
-                      {/* <!-- vedio area start --> */}
-                      {/* <div className="vedio-area-start">
-                        <a href="#" className="rts-btn btn-primary">
-                          Read More{" "}
-                          <i className="fa-regular fa-arrow-right"></i>
-                        </a>
-                        <div className="vedio-icone">
-                          <a className=" play-video video-play-button" href="#">
-                            <span></span>
-                            <p className="text">Play Vedio</p>
-                          </a>
-                          <div className="video-overlay">
-                            <a className="video-overlay-close">×</a>
-                          </div>
-                        </div>
-                      </div> */}
-                      {/* <!-- vedio area end --> */}
                     </div>
-                    {/* <!-- single nav content end --> */}
                   </div>
+
                   <div
                     className="tab-pane fade"
                     id="pills-contact"
                     role="tabpanel"
                     aria-labelledby="pills-contact-tab"
                   >
-                    {/* <!-- single nav content start --> */}
                     <div className="single-about-content-solar">
                       <p className="disc">
                         Our goal at Green Power Systems is to establish
@@ -265,83 +261,71 @@ const CompanyAbout = (props: Props) => {
                       </p>
                       <div className="row align-items-center">
                         <div className="col-lg-6">
-                          <div className="left-area-wrapper">
-                            <img
-                              src="assets/images/green/bread-cuamb-banner-1.jpg"
+                          <div
+                            className="left-area-wrapper"
+                            style={{
+                              position: "relative",
+                              width: "100%",
+                              height: "300px",
+                            }}
+                          >
+                            <Image
+                              src="/assets/images/green/bread-cuamb-banner-1.jpg"
                               alt="about"
+                              fill
+                              style={{ objectFit: "cover" }}
                             />
                           </div>
                         </div>
                         <div className="col-lg-6">
-                          {/* <!-- about ncheck wrapper main --> */}
                           <div className="single-ckeck-wrapper">
-                            <img
-                              src="assets/images/about/dt.png"
+                            <Image
+                              src="/assets/images/about/dt.png"
                               alt="dotted"
+                              width={20}
+                              height={20}
                             />
                             <p>Experienced Team of Exparts</p>
                           </div>
-                          {/* <!-- about ncheck wrapper main end -->
-                                            <!-- about ncheck wrapper main --> */}
                           <div className="single-ckeck-wrapper">
-                            <img
-                              src="assets/images/about/dt.png"
+                            <Image
+                              src="/assets/images/about/dt.png"
                               alt="dotted"
+                              width={20}
+                              height={20}
                             />
                             <p>Very first Customers Service</p>
                           </div>
-                          {/* <!-- about ncheck wrapper main end -->
-                                            <!-- about ncheck wrapper main --> */}
                           <div className="single-ckeck-wrapper">
-                            <img
-                              src="assets/images/about/dt.png"
+                            <Image
+                              src="/assets/images/about/dt.png"
                               alt="dotted"
+                              width={20}
+                              height={20}
                             />
                             <p>Flexiblity Work Environment</p>
                           </div>
-                          {/* <!-- about ncheck wrapper main end -->
-                                            <!-- about ncheck wrapper main --> */}
                           <div className="single-ckeck-wrapper">
-                            <img
-                              src="assets/images/about/dt.png"
+                            <Image
+                              src="/assets/images/about/dt.png"
                               alt="dotted"
+                              width={20}
+                              height={20}
                             />
                             <p>Provide Quality Service</p>
                           </div>
-                          {/* <!-- about ncheck wrapper main end --> */}
                         </div>
                       </div>
-                      {/* <!-- vedio area start --> */}
-                      {/* <div className="vedio-area-start">
-                        <a href="#" className="rts-btn btn-primary">
-                          Read More{" "}
-                          <i className="fa-regular fa-arrow-right"></i>
-                        </a>
-                        <div className="vedio-icone">
-                          <a className=" play-video video-play-button" href="#">
-                            <span></span>
-                            <p className="text">Play Vedio</p>
-                          </a>
-                          <div className="video-overlay">
-                            <a className="video-overlay-close">×</a>
-                          </div>
-                        </div>
-                      </div> */}
-                      {/* <!-- vedio area end --> */}
                     </div>
-                    {/* <!-- single nav content end --> */}
                   </div>
                 </div>
-                {/* <!-- nav content end -->
-                        <!-- tab area start about end --> */}
               </div>
-              {/* <!-- about nrighht content area end --> */}
             </div>
           </div>
         </div>
       </div>
     </div>
   );
-}
+};
 
-export default CompanyAbout
+export default CompanyAbout;
