@@ -13,8 +13,10 @@ const Hero = (props: Props) => {
           src="/assets/images/green/hero-bg-3.jpg"
           alt="Hero Background"
           fill
-          priority // Important for LCP (Largest Contentful Paint) since it's the hero section
-          className="object-cover -z-10" // -z-10 keeps it behind the content
+          priority
+          sizes="100vw" // Tells the browser the image will take the full width
+          quality={80} // Slightly lower quality to reduce file size without losing the premium look
+          className="object-cover -z-10"
         />
 
         <div className="container-full relative z-10">

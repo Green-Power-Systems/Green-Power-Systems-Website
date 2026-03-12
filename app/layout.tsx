@@ -50,50 +50,23 @@ export default function RootLayout({
           src="/assets/js/plugins/jquery.min.js"
           strategy="afterInteractive"
         />
-        <Script
-          src="/assets/js/vendor/jqueryui.js"
-          strategy="afterInteractive"
-        />
-        <Script
-          src="/assets/js/plugins/counter-up.js"
-          strategy="afterInteractive"
-        />
-        <Script
-          src="/assets/js/plugins/swiper.js"
-          strategy="afterInteractive"
-        />
-        <Script
-          src="/assets/js/plugins/metismenu.js"
-          strategy="afterInteractive"
-        />
-        <Script
-          src="/assets/js/vendor/waypoint.js"
-          strategy="afterInteractive"
-        />
+        <Script src="/assets/js/vendor/jqueryui.js" strategy="lazyOnload" />
+        <Script src="/assets/js/plugins/counter-up.js" strategy="lazyOnload" />
+        <Script src="/assets/js/plugins/swiper.js" strategy="lazyOnload" />
+        <Script src="/assets/js/plugins/metismenu.js" strategy="lazyOnload" />
+        <Script src="/assets/js/vendor/waypoint.js" strategy="lazyOnload" />
         <Script src="/assets/js/vendor/waw.js" strategy="afterInteractive" />
-        <Script
-          src="/assets/js/plugins/gsap.min.js"
-          strategy="afterInteractive"
-        />
+        <Script src="/assets/js/plugins/gsap.min.js" strategy="lazyOnload" />
         <Script
           src="/assets/js/plugins/scrolltigger.js"
-          strategy="afterInteractive"
+          strategy="lazyOnload"
         />
-        <Script
-          src="/assets/js/vendor/split-text.js"
-          strategy="afterInteractive"
-        />
-        <Script
-          src="/assets/js/vendor/contact.form.js"
-          strategy="afterInteractive"
-        />
-        <Script
-          src="/assets/js/vendor/split-type.js"
-          strategy="afterInteractive"
-        />
+        <Script src="/assets/js/vendor/split-text.js" strategy="lazyOnload" />
+        <Script src="/assets/js/vendor/contact.form.js" strategy="lazyOnload" />
+        <Script src="/assets/js/vendor/split-type.js" strategy="lazyOnload" />
         <Script
           src="/assets/js/plugins/jquery-timepicker.js"
-          strategy="afterInteractive"
+          strategy="lazyOnload"
         />
         <Script
           src="/assets/js/plugins/bootstrap.min.js"
@@ -101,7 +74,7 @@ export default function RootLayout({
         />
         <Script
           src="/assets/js/vendor/magnific-popup.min.js"
-          strategy="afterInteractive"
+          strategy="lazyOnload"
         />
 
         {/* The main.js should likely load last, as it may rely on all plugins above. */}
