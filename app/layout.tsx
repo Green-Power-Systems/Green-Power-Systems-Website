@@ -1,24 +1,21 @@
 // app/layout.tsx
 
 import type { Metadata } from "next";
-import { Inter } from "next/font/google"; // Assuming you have a font import
-import Script from "next/script"; // 👈 Import the Script component
+import { Inter } from "next/font/google";
+import Script from "next/script";
 import ClientStyleLoader from "@/components/ClientStyleLoader";
 
 import "./globals.css";
-//  <!-- fontawesome css -->
 
-    // <!-- bootstrap css -->
+// CSS
 import "@/assets/css/vendor/bootstrap.min.css";
-    // <!-- Custom css -->
 import "@/assets/css/style.css";
 
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 
-const inter = Inter({ subsets: ["latin"], display: 'swap' });
+const inter = Inter({ subsets: ["latin"], display: "swap" });
 
-// ... (Metadata export)
 export const metadata: Metadata = {
   title: "Green Power Systems PLC",
   description:
@@ -46,16 +43,23 @@ export default function RootLayout({
         {children}
         <Footer />
 
+        {/* Critical JS */}
         <Script
           src="/assets/js/plugins/jquery.min.js"
           strategy="afterInteractive"
         />
+        <Script
+          src="/assets/js/plugins/bootstrap.min.js"
+          strategy="afterInteractive"
+        />
+        <Script src="/assets/js/vendor/waw.js" strategy="afterInteractive" />
+
+        {/* Non-critical JS (lazy load after page idle) */}
         <Script src="/assets/js/vendor/jqueryui.js" strategy="lazyOnload" />
         <Script src="/assets/js/plugins/counter-up.js" strategy="lazyOnload" />
         <Script src="/assets/js/plugins/swiper.js" strategy="lazyOnload" />
         <Script src="/assets/js/plugins/metismenu.js" strategy="lazyOnload" />
         <Script src="/assets/js/vendor/waypoint.js" strategy="lazyOnload" />
-        <Script src="/assets/js/vendor/waw.js" strategy="afterInteractive" />
         <Script src="/assets/js/plugins/gsap.min.js" strategy="lazyOnload" />
         <Script
           src="/assets/js/plugins/scrolltigger.js"
@@ -69,15 +73,11 @@ export default function RootLayout({
           strategy="lazyOnload"
         />
         <Script
-          src="/assets/js/plugins/bootstrap.min.js"
-          strategy="afterInteractive"
-        />
-        <Script
           src="/assets/js/vendor/magnific-popup.min.js"
           strategy="lazyOnload"
         />
 
-        {/* The main.js should likely load last, as it may rely on all plugins above. */}
+        {/* Main JS (load last) */}
         <Script src="/assets/js/main.js" strategy="lazyOnload" />
       </body>
     </html>
