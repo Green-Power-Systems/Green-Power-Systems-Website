@@ -1,23 +1,49 @@
-import Hero from '@/components/Hero'
-import About from '@/components/About'
+import Hero from "@/components/Hero";
+import About from "@/components/About";
 
+import dynamic from "next/dynamic";
 
-import dynamic from "next/dynamic"
+// reserve space while loading
+const CompanyAbout = dynamic(() => import("@/components/about/CompanyAbout"), {
+  loading: () => <div style={{ minHeight: "500px" }} />,
+});
 
-const CompanyAbout = dynamic(() => import("@/components/about/CompanyAbout"));
-const WhyChoose = dynamic(() => import("@/components/WhyChoose"));
-const CTA = dynamic(() => import("@/components/CTA"));
-const Facts = dynamic(() => import('@/components/Facts'))
-const Service = dynamic(() => import('@/components/Service'))
-const Gallery = dynamic(() => import('@/components/Gallery'))
-const Feedback = dynamic(() => import('@/components/Feedback'))
-const Blog = dynamic(() => import('@/components/Blog'))
+const WhyChoose = dynamic(() => import("@/components/WhyChoose"), {
+  loading: () => <div style={{ minHeight: "500px" }} />,
+});
+
+const CTA = dynamic(() => import("@/components/CTA"), {
+  loading: () => <div style={{ minHeight: "200px" }} />,
+});
+
+const Facts = dynamic(() => import("@/components/Facts"), {
+  loading: () => <div style={{ minHeight: "300px" }} />,
+});
+
+const Service = dynamic(() => import("@/components/Service"), {
+  loading: () => <div style={{ minHeight: "600px" }} />,
+});
+
+const Gallery = dynamic(() => import("@/components/Gallery"), {
+  ssr: false,
+  loading: () => <div style={{ minHeight: "600px" }} />,
+});
+
+const Feedback = dynamic(() => import("@/components/Feedback"), {
+  ssr: false,
+  loading: () => <div style={{ minHeight: "400px" }} />,
+});
+
+const Blog = dynamic(() => import("@/components/Blog"), {
+  loading: () => <div style={{ minHeight: "500px" }} />,
+});
 
 const page = () => {
   return (
     <div>
       <Hero />
       <About />
+
       <CompanyAbout />
       <WhyChoose />
       <CTA />
@@ -28,7 +54,7 @@ const page = () => {
       <Feedback />
       <Blog />
     </div>
-  )
-}
+  );
+};
 
-export default page
+export default page;
