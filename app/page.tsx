@@ -25,12 +25,12 @@ const Service = dynamic(() => import("@/components/Service"), {
 });
 
 const Gallery = dynamic(() => import("@/components/Gallery"), {
-  ssr: false,
+  // ssr: false,
   loading: () => <div style={{ minHeight: "600px" }} />,
 });
 
 const Feedback = dynamic(() => import("@/components/Feedback"), {
-  ssr: false,
+  // ssr: false,
   loading: () => <div style={{ minHeight: "400px" }} />,
 });
 
