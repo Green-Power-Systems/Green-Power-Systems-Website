@@ -2,7 +2,7 @@
 "use client";
 
 // Import all the plugins you aren't sure about here
-// import "@/assets/css/plugins/fontawesome-6.css";
+import "@/assets/css/plugins/fontawesome-6.css";
 import "@/assets/css/plugins/swiper.css";
 import "@/assets/css/plugins/unicons.css";
 import "@/assets/css/plugins/metismenu.css";

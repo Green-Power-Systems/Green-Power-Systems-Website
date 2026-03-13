@@ -1,60 +1,37 @@
-import Hero from "@/components/Hero";
-import About from "@/components/About";
-
-import dynamic from "next/dynamic";
-
-// reserve space while loading
-const CompanyAbout = dynamic(() => import("@/components/about/CompanyAbout"), {
-  loading: () => <div style={{ minHeight: "500px" }} />,
-});
-
-const WhyChoose = dynamic(() => import("@/components/WhyChoose"), {
-  loading: () => <div style={{ minHeight: "500px" }} />,
-});
-
-const CTA = dynamic(() => import("@/components/CTA"), {
-  loading: () => <div style={{ minHeight: "200px" }} />,
-});
-
-const Facts = dynamic(() => import("@/components/Facts"), {
-  loading: () => <div style={{ minHeight: "300px" }} />,
-});
-
-const Service = dynamic(() => import("@/components/Service"), {
-  loading: () => <div style={{ minHeight: "600px" }} />,
-});
-
-const Gallery = dynamic(() => import("@/components/Gallery"), {
-  // ssr: false,
-  loading: () => <div style={{ minHeight: "600px" }} />,
-});
-
-const Feedback = dynamic(() => import("@/components/Feedback"), {
-  // ssr: false,
-  loading: () => <div style={{ minHeight: "400px" }} />,
-});
-
-const Blog = dynamic(() => import("@/components/Blog"), {
-  loading: () => <div style={{ minHeight: "500px" }} />,
-});
+import About from '@/components/About'
+import CompanyAbout from '@/components/about/CompanyAbout';
+import Blog from '@/components/Blog';
+import CTA from '@/components/CTA';
+import Facts from '@/components/Facts';
+import Feedback from '@/components/Feedback';
+import Gallery from '@/components/Gallery';
+import GapTop from '@/components/GapTop';
+import Hero from '@/components/Hero'
+import Projects from '@/components/Projects';
+import Service from '@/components/Service';
+import Team from '@/components/Team';
+import WhyChoose from '@/components/WhyChoose';
+import Script from 'next/script';
+import React from 'react'
 
 const page = () => {
   return (
     <div>
       <Hero />
       <About />
-
-      <CompanyAbout />
-      <WhyChoose />
-      <CTA />
-
-      <Facts />
-      <Service />
-      <Gallery />
-      <Feedback />
-      <Blog />
+      <CompanyAbout/>
+      <WhyChoose/>
+      <CTA/>
+      <Facts/>
+      <Service/>
+      <Gallery/>
+      <Feedback/>
+      {/* <Projects/> */}
+       {/* <GapTop/>*/}
+      {/* <Team/> */}
+      <Blog/>
     </div>
   );
-};
+}
 
-export default page;
+export default page
