@@ -2,6 +2,12 @@
 
 /* In your CSS file (e.g., GapTop.css) */
 
+/* Pause animations until page is loaded */
+body:not(.page-loaded) * {
+  animation: none !important;
+  transition: none !important;
+}
+
 .seamless-scroll-container {
   overflow: hidden; /* This hides the content outside the container */
   position: relative; /* Set position for a stacking context */
